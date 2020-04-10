@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="sd" onclick="a">sd</button>
+    <script>
+        // window.onload = function() {
+
+        //     }
+        window.onload = function() {
+            a()
+        }
+
+        function a() {
+            var a = document.querySelector('.sd');
+            a.addEventListener("touchstart", function(e) {
+                alert("aaaaaaa");
+            })
+            let theEvent = document.createEvent("Events");
+            theEvent.initEvent("touchstart", true, true);
+            document.querySelector('.sd').dispatchEvent(theEvent);
+        }
+    </script>
+</body>
+
+</html>

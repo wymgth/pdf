@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>督导报告</title>
+    <link rel="stylesheet" type="text/css" href="css/jihe-page.css" />
+    <style media="print">
+        .btn {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="councilor-table">
+        <div class="councilor-table-main1">
+            <h4>督导报告</h4>
+            <span id="close-icon">X</span>
+        </div>
+        <div class="councilor-table-main2">
+            <div class="table-div1">
+                <h5>督导意见</h5>
+                <ul>
+                    <li><span>督导任务名称</span><span>XXX</span></li>
+                    <li><span>活动关联门店总数：</span><span>50</span></li>
+                    <li><span>已执行门店数：</span><span>30</span></li>
+                </ul>
+            </div>
+            <div class="table-div2">
+                <h5>多次督导数据汇总</h5>
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <td>督导任务编码</td>
+                            <td>督导任务内容</td>
+                            <td>督导时间</td>
+                            <td>门店督导数</td>
+                            <td>不合要求门店数</td>
+                            <td>虚假执行门店数</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <td>督导人员</td>
+                            <td>督导任务编码</td>
+                            <td>督导意见</td>
+                            <td>原因描述</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="10%">1</td>
+                            <td width="16%">1</td>
+                            <td width="32%">1</td>
+                            <td width="32%">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="councilor-table-main3">
+            <h5>督导报告</h5>
+            <ul>
+                <li>
+                    <span>活动执行是否合格：</span>
+                    <label id="label-radio1"><input type="radio" name="radio" />是</label>
+                    <label id="label-radio2"><input type="radio" name="radio" />否</label>
+                </li>
+                <li class="label-radio1-main"><span class="textarea-span">原因描述：</span><textarea readonly="readonly" rows="5" cols="60"></textarea></li>
+                <div class="label-radio2-main">
+                    <li><span class="textarea-span">督导意见：</span><textarea readonly="readonly" rows="5" cols="60"></textarea></li>
+                    <li><span class="textarea-span">整改意见：</span><textarea readonly="readonly" rows="5" cols="60"></textarea></li>
+                </div>
+            </ul>
+            <div class="table-div3">
+                <button>取消</button><button>提交报告</button><button class="btn" onclick="doPrint();">打印</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function doPrint() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>
